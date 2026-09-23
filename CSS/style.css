@@ -1,0 +1,33 @@
+/* Container for vertical nav */
+        nav {
+        width: 200px;               /* fixed width sidebar */
+        background-color: #333;
+        height: 100vh;              /* full viewport height */
+        }
+        /* Remove list styling */
+        nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        }
+        /* Links take full width */
+        nav a {
+        display: block;             /* stack links vertically */
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        }
+        /* Hover effect */
+        nav a:hover {
+        background-color: #d9d3d3;
+        }
+        /* Active/current page */
+        nav a.active {
+        background-color: #04AA6D;
+        font-weight: bold;
+        }
+body { display: flex; margin: 0; min-height: 100vh; }
+nav { width: 200px; flex-shrink: 0; }
+nav ul { list-style: none; margin: 0; padding: 1rem; }
+main { flex: 1; padding: 1rem; }
+
